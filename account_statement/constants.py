@@ -23,9 +23,9 @@ class RowType(Enum):
 
 
 template_path = {
-    RowType.WHITE_ROW: "account_statement/templates/_table_row.html",
-    RowType.BLACK_ROW: "account_statement/templates/_table_row_black.html",
-    "BASE": "account_statement/templates/_base.html",
+    RowType.WHITE_ROW: "templates/_table_row.html",
+    RowType.BLACK_ROW: "templates/_table_row_black.html",
+    "BASE": "templates/_base.html",
     "INPUT_CSV_1": "inputs/sheet_1.csv",
     "INPUT_CSV_2": "inputs/sheet_2.csv",
 }
