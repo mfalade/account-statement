@@ -235,6 +235,20 @@
       font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia,
         serif;
     }
+    .table-header {
+      border: 2px solid #000;
+      background-color: #ccc;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      height: 40px;
+    }
+
+    .table-header__title {
+      font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia,
+        serif;
+      font-weight: bold;
+    }
+
     .container-2 {
       display: block;
       padding-left: 35px;
@@ -429,8 +443,8 @@
     .balo {
       position: relative;
       display: inline-block;
-      width: 130px;
-      padding-left: 76px;
+      width: 100px;
+      padding-left: 68px;
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
@@ -733,26 +747,14 @@
           ACCOUNT:&nbsp;CURRENT ACCOUNT (CDN$)<br />PACKAGES:&nbsp;EPACKAGE
         </div>
       </div>
-      <div class="container-2 w-container">
-        <div class="div-block">
-          <div class="columns-2 w-row">
-            <div class="column-2 w-col w-col-2">
-              <div class="text-block-8">MM&nbsp; DD</div>
-            </div>
-            <div class="column-6 w-col w-col-2">
-              <div class="text-block-8">DESCRIPTION</div>
-            </div>
-            <div class="column-7 w-col w-col-2"></div>
-            <div class="column-3 w-col w-col-2">
-              <div class="text-block-8">DEBIT</div>
-            </div>
-            <div class="column-4 w-col w-col-2">
-              <div class="text-block-8">CREDIT</div>
-            </div>
-            <div class="column-5 w-col w-col-2">
-              <div class="text-block-8">BALANCE</div>
-            </div>
-          </div>
+      <div class="container-2 w-container table">
+        <div class="section wf-section table-header">
+          <div class="mm table-header__title">MM</div>
+          <div class="dd table-header__title">DD</div>
+          <div class="decipr deee table-header__title">DESCRIPTION</div>
+          <div class="drbiyy table-header__title">DEBIT</div>
+          <div class="cred table-header__title">CREDIT</div>
+          <div class="balo table-header__title">BALANCE</div>
         </div>
       </div>
       <div class="container-3 w-container" id="balance-sheet"></div>
@@ -790,13 +792,21 @@
             <div
               name="package__fees"
               class="text-block-23 text-block-16 text-block-17"
-            >__placeholder__</div>
+            >
+              __placeholder__
+            </div>
           </div>
           <div class="section tableblack wf-section">
             <div class="text-block-16">ITEM DEPOSITED</div>
-            <div name="item-deposited__volume" class="text-block-20">__placeholder__</div>
-            <div name="item-deposited__rate" class="text-block-21">__placeholder__</div>
-            <div name="item-deposited__fees" class="text-block-22">__placeholder__</div>
+            <div name="item-deposited__volume" class="text-block-20">
+              __placeholder__
+            </div>
+            <div name="item-deposited__rate" class="text-block-21">
+              __placeholder__
+            </div>
+            <div name="item-deposited__fees" class="text-block-22">
+              __placeholder__
+            </div>
           </div>
         </div>
       </div>
@@ -804,13 +814,21 @@
         <div>
           <div class="section wf-section">
             <div class="text-block-16">DEPOSITS COUNTER</div>
-            <div name="deposits-counter__volume" class="text-block-20">__placeholder__</div>
-            <div name="deposits-counter__rate" class="text-block-20">__placeholder__</div>
-            <div name="deposits-counter__fees" class="text-block-22">__placeholder__</div>
+            <div name="deposits-counter__volume" class="text-block-20">
+              __placeholder__
+            </div>
+            <div name="deposits-counter__rate" class="text-block-20">
+              __placeholder__
+            </div>
+            <div name="deposits-counter__fees" class="text-block-22">
+              __placeholder__
+            </div>
           </div>
           <div class="section tableblack tests wf-section">
             <div class="text-block-16 hee">TOTAL</div>
-            <div name="total__fees" class="text-block-17 text-block-16">__placeholder__</div>
+            <div name="total__fees" class="text-block-17 text-block-16">
+              __placeholder__
+            </div>
           </div>
         </div>
         <div>
@@ -840,20 +858,28 @@
           <div
             name="debit-transactions__volume"
             class="text-block-16 bottobot debit number val"
-          >__placeholder__</div>
+          >
+            __placeholder__
+          </div>
           <div
             name="debit-transactions__sum"
             class="text-block-16 bottobot totl _1 vv e"
-          >__placeholder__</div>
+          >
+            __placeholder__
+          </div>
           <div class="text-block-16 bottobot totl _2 va credit">CREDIT</div>
           <div
             name="credit-transactions__volume"
             class="text-block-16 bottobot totl _3 vvv"
-          >__placeholder__</div>
+          >
+            __placeholder__
+          </div>
           <div
             name="credit-transactions__sum"
             class="text-block-16 bottobot totl _1 vv fiba"
-          >__placeholder__</div>
+          >
+            __placeholder__
+          </div>
         </div>
         <div class="section tableblack tests bottomline wf-section"></div>
         <div>

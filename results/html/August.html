@@ -7,7 +7,7 @@
 -->
  <meta charset="utf-8"/>
  <title>
-  Dec2020-Jan2021
+  Aug2020-Sep2020
  </title>
  <meta content="Mar2020-Apr2020" property="og:title"/>
  <meta content="Mar2020-Apr2020" property="twitter:title"/>
@@ -230,6 +230,20 @@
       font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia,
         serif;
     }
+    .table-header {
+      border: 2px solid #000;
+      background-color: #ccc;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      height: 40px;
+    }
+
+    .table-header__title {
+      font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia,
+        serif;
+      font-weight: bold;
+    }
+
     .container-2 {
       display: block;
       padding-left: 35px;
@@ -424,8 +438,8 @@
     .balo {
       position: relative;
       display: inline-block;
-      width: 130px;
-      padding-left: 76px;
+      width: 100px;
+      padding-left: 68px;
       -webkit-box-flex: 0;
       -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
@@ -744,43 +758,32 @@
      PACKAGES: EPACKAGE
     </div>
    </div>
-   <div class="container-2 w-container">
-    <div class="div-block">
-     <div class="columns-2 w-row">
-      <div class="column-2 w-col w-col-2">
-       <div class="text-block-8">
-        MM  DD
-       </div>
-      </div>
-      <div class="column-6 w-col w-col-2">
-       <div class="text-block-8">
-        DESCRIPTION
-       </div>
-      </div>
-      <div class="column-7 w-col w-col-2">
-      </div>
-      <div class="column-3 w-col w-col-2">
-       <div class="text-block-8">
-        DEBIT
-       </div>
-      </div>
-      <div class="column-4 w-col w-col-2">
-       <div class="text-block-8">
-        CREDIT
-       </div>
-      </div>
-      <div class="column-5 w-col w-col-2">
-       <div class="text-block-8">
-        BALANCE
-       </div>
-      </div>
+   <div class="container-2 w-container table">
+    <div class="section wf-section table-header">
+     <div class="mm table-header__title">
+      MM
+     </div>
+     <div class="dd table-header__title">
+      DD
+     </div>
+     <div class="decipr deee table-header__title">
+      DESCRIPTION
+     </div>
+     <div class="drbiyy table-header__title">
+      DEBIT
+     </div>
+     <div class="cred table-header__title">
+      CREDIT
+     </div>
+     <div class="balo table-header__title">
+      BALANCE
      </div>
     </div>
    </div>
    <div class="container-3 w-container" id="balance-sheet">
     <div class="section wf-section">
      <div class="mm" name="month">
-      12
+      08
      </div>
      <div class="dd" name="day">
       01
@@ -793,148 +796,129 @@
      <div class="cred" name="credit">
      </div>
      <div class="balo" name="balance">
-      766,561.73
+      762,447.84
      </div>
     </div>
     <div class="section tableblack wf-section">
      <div class="mm" name="month">
-      12
-     </div>
-     <div class="dd" name="day">
-      02
-     </div>
-     <div class="decipr deee" name="description">
-      I/DEPOSIT 44529
-     </div>
-     <div class="drbiyy" name="debit">
-     </div>
-     <div class="cred" name="credit">
-      1,215.04
-     </div>
-     <div class="balo" name="balance">
-      767,776.77
-     </div>
-    </div>
-    <div class="section wf-section">
-     <div class="mm" name="month">
-      12
+      08
      </div>
      <div class="dd" name="day">
       03
      </div>
      <div class="decipr deee" name="description">
-      I/DEPOSIT
+      G/WITHDRAW
      </div>
      <div class="drbiyy" name="debit">
+      630.18
      </div>
      <div class="cred" name="credit">
-      1,280.42
      </div>
      <div class="balo" name="balance">
-      769,057.19
+      761,817.66
      </div>
     </div>
-    <div class="section tableblack wf-section">
+    <div class="section wf-section">
      <div class="mm" name="month">
-      12
-     </div>
-     <div class="dd" name="day">
       08
      </div>
+     <div class="dd" name="day">
+      04
+     </div>
      <div class="decipr deee" name="description">
-      G/WITHDRAW
+      TRFDT INTERAC ETRANSFER
      </div>
      <div class="drbiyy" name="debit">
-      4,524.33
      </div>
      <div class="cred" name="credit">
+      761.30
      </div>
      <div class="balo" name="balance">
-      764,532.86
+      762,578.96
      </div>
     </div>
-    <div class="section wf-section">
+    <div class="section tableblack wf-section">
      <div class="mm" name="month">
-      12
-     </div>
-     <div class="dd" name="day">
       08
      </div>
+     <div class="dd" name="day">
+      04
+     </div>
      <div class="decipr deee" name="description">
       G/WITHDRAW
      </div>
      <div class="drbiyy" name="debit">
-      2,482.39
+      2,850.85
      </div>
      <div class="cred" name="credit">
      </div>
      <div class="balo" name="balance">
-      762,050.47
-     </div>
-    </div>
-    <div class="section tableblack wf-section">
-     <div class="mm" name="month">
-      12
-     </div>
-     <div class="dd" name="day">
-      13
-     </div>
-     <div class="decipr deee" name="description">
-      I/DEPOSIT
-     </div>
-     <div class="drbiyy" name="debit">
-     </div>
-     <div class="cred" name="credit">
-      3,071.23
-     </div>
-     <div class="balo" name="balance">
-      765,121.70
+      759,728.11
      </div>
     </div>
     <div class="section wf-section">
      <div class="mm" name="month">
-      12
+      08
      </div>
      <div class="dd" name="day">
-      14
+      04
      </div>
      <div class="decipr deee" name="description">
       G/WITHDRAW
      </div>
      <div class="drbiyy" name="debit">
-      1,319.25
+      591.46
      </div>
      <div class="cred" name="credit">
      </div>
      <div class="balo" name="balance">
-      763,802.45
+      759,136.65
      </div>
     </div>
     <div class="section tableblack wf-section">
      <div class="mm" name="month">
-      12
+      08
      </div>
      <div class="dd" name="day">
-      16
+      09
      </div>
      <div class="decipr deee" name="description">
-      G/WITHDRAW
+      TRFDT INTERAC ETRANSFER
      </div>
      <div class="drbiyy" name="debit">
-      2,955.88
      </div>
      <div class="cred" name="credit">
+      568.74
      </div>
      <div class="balo" name="balance">
-      760,846.56
+      759,705.40
      </div>
     </div>
     <div class="section wf-section">
      <div class="mm" name="month">
-      12
+      08
      </div>
      <div class="dd" name="day">
-      17
+      09
+     </div>
+     <div class="decipr deee" name="description">
+      TRFDT INTERAC ETRANSFER
+     </div>
+     <div class="drbiyy" name="debit">
+     </div>
+     <div class="cred" name="credit">
+      3,463.35
+     </div>
+     <div class="balo" name="balance">
+      763,168.74
+     </div>
+    </div>
+    <div class="section tableblack wf-section">
+     <div class="mm" name="month">
+      08
+     </div>
+     <div class="dd" name="day">
+      09
      </div>
      <div class="decipr deee" name="description">
       MOBILE TRFDT IT
@@ -942,72 +926,148 @@
      <div class="drbiyy" name="debit">
      </div>
      <div class="cred" name="credit">
-      2,242.27
+      1,527.74
      </div>
      <div class="balo" name="balance">
-      763,088.83
-     </div>
-    </div>
-    <div class="section tableblack wf-section">
-     <div class="mm" name="month">
-      12
-     </div>
-     <div class="dd" name="day">
-      17
-     </div>
-     <div class="decipr deee" name="description">
-      MOBILE DT/TRANS
-     </div>
-     <div class="drbiyy" name="debit">
-     </div>
-     <div class="cred" name="credit">
-      817.63
-     </div>
-     <div class="balo" name="balance">
-      763,906.46
+      764,696.48
      </div>
     </div>
     <div class="section wf-section">
      <div class="mm" name="month">
-      12
+      08
      </div>
      <div class="dd" name="day">
-      21
+      11
      </div>
      <div class="decipr deee" name="description">
-      MOBILE TRFDT IT
+      G/WITHDRAW
      </div>
      <div class="drbiyy" name="debit">
+      1,298.94
      </div>
      <div class="cred" name="credit">
-      2,598.88
      </div>
      <div class="balo" name="balance">
-      766,505.34
+      763,397.54
      </div>
     </div>
     <div class="section tableblack wf-section">
      <div class="mm" name="month">
+      08
+     </div>
+     <div class="dd" name="day">
       12
+     </div>
+     <div class="decipr deee" name="description">
+      I/DEPOSIT
+     </div>
+     <div class="drbiyy" name="debit">
+     </div>
+     <div class="cred" name="credit">
+      4,980.39
+     </div>
+     <div class="balo" name="balance">
+      768,377.92
+     </div>
+    </div>
+    <div class="section wf-section">
+     <div class="mm" name="month">
+      08
+     </div>
+     <div class="dd" name="day">
+      19
+     </div>
+     <div class="decipr deee" name="description">
+      G/WITHDRAW
+     </div>
+     <div class="drbiyy" name="debit">
+      5,301.82
+     </div>
+     <div class="cred" name="credit">
+     </div>
+     <div class="balo" name="balance">
+      763,076.10
+     </div>
+    </div>
+    <div class="section tableblack wf-section">
+     <div class="mm" name="month">
+      08
+     </div>
+     <div class="dd" name="day">
+      20
+     </div>
+     <div class="decipr deee" name="description">
+      G/WITHDRAW
+     </div>
+     <div class="drbiyy" name="debit">
+      3,142.67
+     </div>
+     <div class="cred" name="credit">
+     </div>
+     <div class="balo" name="balance">
+      759,933.43
+     </div>
+    </div>
+    <div class="section wf-section">
+     <div class="mm" name="month">
+      08
      </div>
      <div class="dd" name="day">
       23
      </div>
      <div class="decipr deee" name="description">
-      I/DEPOSIT
+      I/DEPOSIT 44409
      </div>
      <div class="drbiyy" name="debit">
      </div>
      <div class="cred" name="credit">
-      434.15
+      1,238.85
      </div>
      <div class="balo" name="balance">
-      766,939.49
+      761,172.29
+     </div>
+    </div>
+    <div class="section tableblack wf-section">
+     <div class="mm" name="month">
+      08
+     </div>
+     <div class="dd" name="day">
+      25
+     </div>
+     <div class="decipr deee" name="description">
+      G/WITHDRAW
+     </div>
+     <div class="drbiyy" name="debit">
+      4,122.58
+     </div>
+     <div class="cred" name="credit">
+     </div>
+     <div class="balo" name="balance">
+      757,049.71
      </div>
     </div>
     <div class="section wf-section">
      <div class="mm" name="month">
-      12
+      08
+     </div>
+     <div class="dd" name="day">
+      25
+     </div>
+     <div class="decipr deee" name="description">
+      G/WITHDRAW
+     </div>
+     <div class="drbiyy" name="debit">
+      4,447.69
+     </div>
+     <div class="cred" name="credit">
+     </div>
+     <div class="balo" name="balance">
+      752,602.02
+     </div>
+    </div>
+    <div class="section tableblack wf-section">
+     <div class="mm" name="month">
+      08
      </div>
      <div class="dd" name="day">
       29
@@ -1021,7 +1081,21 @@
      <div class="cred" name="credit">
      </div>
      <div class="balo" name="balance">
-      766,928.50
+      752,591.03
+     </div>
+    </div>
+    <div class="section wf-section">
+     <div class="mm" name="month">
+     </div>
+     <div class="dd" name="day">
+     </div>
+     <div class="decipr deee" name="description">
+     </div>
+     <div class="drbiyy" name="debit">
+     </div>
+     <div class="cred" name="credit">
+     </div>
+     <div class="balo" name="balance">
      </div>
     </div>
     <div class="section tableblack wf-section">
@@ -1119,13 +1193,13 @@
        ITEM DEPOSITED
       </div>
       <div class="text-block-20" name="item-deposited__volume">
-       4
+       2
       </div>
       <div class="text-block-21" name="item-deposited__rate">
        0.22
       </div>
       <div class="text-block-22" name="item-deposited__fees">
-       0.88
+       0.44
       </div>
      </div>
     </div>
@@ -1137,13 +1211,13 @@
        DEPOSITS COUNTER
       </div>
       <div class="text-block-20" name="deposits-counter__volume">
-       1
+       0
       </div>
       <div class="text-block-20" name="deposits-counter__rate">
        2.50
       </div>
       <div class="text-block-22" name="deposits-counter__fees">
-       2.50
+       0.00
       </div>
      </div>
      <div class="section tableblack tests wf-section">
@@ -1151,7 +1225,7 @@
        TOTAL
       </div>
       <div class="text-block-17 text-block-16" name="total__fees">
-       5.98
+       3.04
       </div>
      </div>
     </div>
@@ -1195,19 +1269,19 @@
       DEBIT
      </div>
      <div class="text-block-16 bottobot debit number val" name="debit-transactions__volume">
-      5
+      9
      </div>
      <div class="text-block-16 bottobot totl _1 vv e" name="debit-transactions__sum">
-      14,124.52
+      25,559.57
      </div>
      <div class="text-block-16 bottobot totl _2 va credit">
       CREDIT
      </div>
      <div class="text-block-16 bottobot totl _3 vvv" name="credit-transactions__volume">
-      5
+      9
      </div>
      <div class="text-block-16 bottobot totl _1 vv fiba" name="credit-transactions__sum">
-      16,453.31
+      12,810.47
      </div>
     </div>
     <div class="section tableblack tests bottomline wf-section">

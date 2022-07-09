@@ -1,4 +1,7 @@
 import itertools
+
+import pdfkit
+from tqdm import tqdm
 from bs4 import BeautifulSoup
 
 import constants
@@ -107,16 +110,26 @@ if __name__ == "__main__":
 
     grouped_records = itertools.groupby(records, lambda x: x.get("date").split("/")[0])
 
-    for index, item in enumerate(grouped_records):
-        group_key, group = item
-        month_breakdown = months_breakdown[index]
-        month_name = utils.get_month_name(group_key)
+    with tqdm(total=12) as progress_bar:
+        for index, item in enumerate(grouped_records):
+            group_key, group = item
+            month_name = utils.get_month_name(group_key)
+            month_breakdown = months_breakdown[index]
 
-        soup = BeautifulSoup(open(constants.template_path["BASE"]), "html.parser")
-        soup = inject_page_title(soup, group_key)
-        soup = inject_balance_sheet(soup, group)
-        soup = inject_itemized_billing(soup, month_breakdown)
+            soup = BeautifulSoup(open(constants.template_path["BASE"]), "html.parser")
+            soup = inject_page_title(soup, group_key)
+            soup = inject_balance_sheet(soup, group)
+            soup = inject_itemized_billing(soup, month_breakdown)
 
-        utils.write_to_file(
-            file_path=f"results/{month_name}.html", content=soup.prettify()
-        )
+            utils.write_to_file(
+                file_path=f"results/html/{month_name}.html", content=soup.prettify()
+            )
+            pdfkit.from_file(
+                input=f"results/html/{month_name}.html",
+                output_path=f"results/pdf/{month_name}.pdf",
+                options={
+                    "dpi": 350,
+                    "page-size": "Letter",
+                },
+            )
+            progress_bar.update()
