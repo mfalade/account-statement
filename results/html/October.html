@@ -152,6 +152,15 @@
       color: #000;
       text-align: right;
     }
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact !important;
+      }
+      .columns {
+        background-color: #f1f1f1 !important;
+        color: #000 !important;
+      }
+    }
     .text-block-5 {
       position: relative;
       left: 107px;
@@ -160,6 +169,11 @@
       font-size: 14.3px;
       font-weight: 400;
       letter-spacing: 0.1px;
+    }
+    @media print {
+      .text-block-5 {
+        color: #202020 !important;
+      }
     }
     .container {
       display: -webkit-box;
@@ -229,6 +243,12 @@
       background-color: #ccc;
       font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia,
         serif;
+    }
+    @media print {
+      .div-block {
+        border: 2px solid #000 !important;
+        background-color: #ccc !important;
+      }
     }
     .container-2 {
       display: block;
@@ -342,6 +362,11 @@
     .section.tableblack {
       background-color: #f1f1f1;
     }
+    @media print {
+      .section.tableblack {
+        background-color: #f1f1f1 !important;
+      }
+    }
     .section.tableblack.bttm {
       border-top: 2px solid rgba(0, 0, 0, 0.29);
     }
@@ -368,6 +393,11 @@
     .section.tableblack.lsash {
       background-color: #fff;
     }
+    @media print {
+      .section.tableblack.lsash {
+        background-color: #fff !important;
+      }
+    }
     .section.line {
       padding-left: 0px;
     }
@@ -376,6 +406,11 @@
     }
     .section.aiai {
       background-color: #f1f1f1;
+    }
+    @media print {
+      .section.aiai {
+        background-color: #f1f1f1 !important;
+      }
     }
     .decipr {
       display: inline-block;
@@ -654,6 +689,11 @@
       flex-direction: column;
       background-color: #fff;
       font-weight: 400;
+    }
+    @media print {
+      .page {
+        background-color: #fff !important;
+      }
     }
     .container-7 {
       display: block;
